@@ -1,0 +1,6 @@
+D:\ACE\ATM_Bank_Konservatif\ATM_Bank_Konservatif\bin\Debug\ATM_Bank_Konservatif.exe.config
+D:\ACE\ATM_Bank_Konservatif\ATM_Bank_Konservatif\obj\Debug\ATM_Bank_Konservatif.csprojResolveAssemblyReference.cache
+D:\ACE\ATM_Bank_Konservatif\ATM_Bank_Konservatif\bin\Debug\ATM_Bank_Konservatif.exe
+D:\ACE\ATM_Bank_Konservatif\ATM_Bank_Konservatif\bin\Debug\ATM_Bank_Konservatif.pdb
+D:\ACE\ATM_Bank_Konservatif\ATM_Bank_Konservatif\obj\Debug\ATM_Bank_Konservatif.exe
+D:\ACE\ATM_Bank_Konservatif\ATM_Bank_Konservatif\obj\Debug\ATM_Bank_Konservatif.pdb

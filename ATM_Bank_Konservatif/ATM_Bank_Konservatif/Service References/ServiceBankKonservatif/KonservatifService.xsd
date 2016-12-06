@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service/" targetNamespace="http://service/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Exception" type="tns:Exception" />
+  <xs:element name="NonexistentEntityException" type="tns:NonexistentEntityException" />
+  <xs:element name="cekSaldo" type="tns:cekSaldo" />
+  <xs:element name="cekSaldoResponse" type="tns:cekSaldoResponse" />
+  <xs:element name="cekTransaksiMasuk" type="tns:cekTransaksiMasuk" />
+  <xs:element name="cekTransaksiMasukResponse" type="tns:cekTransaksiMasukResponse" />
+  <xs:element name="hello" type="tns:hello" />
+  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:element name="login" type="tns:login" />
+  <xs:element name="loginResponse" type="tns:loginResponse" />
+  <xs:element name="transfer" type="tns:transfer" />
+  <xs:element name="transferResponse" type="tns:transferResponse" />
+  <xs:complexType name="hello">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nomor_kartu" type="xs:string" />
+      <xs:element minOccurs="0" name="nomor_pin" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loginResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cekSaldo">
+    <xs:sequence>
+      <xs:element name="id_nasabah" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cekSaldoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="transfer">
+    <xs:sequence>
+      <xs:element name="jumlah" type="xs:int" />
+      <xs:element name="id_pengirim" type="xs:int" />
+      <xs:element minOccurs="0" name="kode_transaksi" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="transferResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NonexistentEntityException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cekTransaksiMasuk">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="kode_transaksi" type="xs:string" />
+      <xs:element minOccurs="0" name="batas_waktu" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cekTransaksiMasukResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

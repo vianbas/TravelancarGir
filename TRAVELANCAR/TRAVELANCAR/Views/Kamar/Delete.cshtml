@@ -1,0 +1,67 @@
+﻿@model TRAVELANCAR.Models.kamar_univ
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>kamar_univ</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.kategori)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.kategori)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.harga_hari_biasa)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.harga_hari_biasa)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.harga_akhir_pekan)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.harga_akhir_pekan)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.jumlah_tersedia)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jumlah_tersedia)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.free_wifi)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.free_wifi)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.free_breakfast)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.free_breakfast)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.jumlah_guest)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jumlah_guest)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

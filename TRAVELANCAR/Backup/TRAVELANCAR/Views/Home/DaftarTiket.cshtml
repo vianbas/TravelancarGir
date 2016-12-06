@@ -1,0 +1,104 @@
+﻿@model IEnumerable<TRAVELANCAR.Models.tiket_univ>
+
+@{
+    ViewBag.Title = "DaftarTiket";
+    TimeSpan span = DateTime.Now.AddMinutes(14).Subtract(DateTime.Now);
+    
+}
+
+<h2>Daftar Pemesanan Tiket</h2>
+
+<table>
+    <tr>
+        <th><strong>Waktu Booking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        </th>
+        <th><strong>Batas Pembayaran ATM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        </th>
+        <th><strong>Batas Pembayaran E-Banking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        </th>
+        <th><strong>Kode Bayar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        </th>
+        <th><strong>Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        </th>
+        <th>
+            <strong>Harga</strong>
+        </th>
+        <th></th>
+    </tr>
+    <hr>
+    @foreach (var item in Model)
+    {
+        if (item.id_penerbangan != 0)
+        { 
+         
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.waktu_booking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.batas_waktu_bayar_atm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.batas_waktu_bayar_internet_banking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kode_bayar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total_harga)
+            </td>
+            <td>
+                @if (item.status == "Lunas")
+                {
+                    @Html.ActionLink("|Tampilkan Tiket|", "tampilkantiket", new { id = item.id, maskapai = item.namaMaskapai }, null)
+                }
+                else if (item.status == "Belum Bayar")
+                {
+                    DateTime batas_atm = (DateTime)item.batas_waktu_bayar_atm;
+                    DateTime batas_ebanking = (DateTime)item.batas_waktu_bayar_internet_banking;
+                    TimeSpan bedaEbanking = DateTime.Now.Subtract(batas_atm);
+                    TimeSpan bedaAtm = DateTime.Now.Subtract(batas_ebanking);
+                    if (bedaAtm.TotalMinutes < 60)
+                    {
+                    @Html.ActionLink("|Bayar ATM|", "bayaratm", new { kodeBayar = item.kode_bayar, jumlah = item.total_harga, batas = item.batas_waktu_bayar_atm },null)<br>
+                    }
+                    if (bedaEbanking.TotalMinutes < 30)
+                    {
+                    <a target="_blank" href="http://localhost:83/bankbung/advanced/frontend/web/index.php">|Bayar E-Banking|</a>
+                    }
+                    else
+                    {
+                        var a = "Kadaluarsa";
+                    @a;
+                    }
+
+                }
+                else
+                {
+                    var a = "Kadaluarsa";
+                    @a;
+                }
+            </td>
+        </tr>
+        }
+    }
+
+</table>
+
+<div>
+    <h3>Petunjuk Pembayaran</h3>
+    <p>
+        Untuk Melakukan Pembayaran Silahkan Lakukan Langkah Langkah Berikut :
+    </p>
+    <ul>
+        <li>Silahkan Memilih Metode Pembayaran ATM atau E-Banking</li>
+        <li>Untuk Pembayaran Melalui ATM anda akan Mendapat No.Rek Tujuan, jumlah , dan kode transaksi, dan total pembayaran yang akan digunakan untuk pembayaran</li>
+        <li>Sedangkan Untuk Pembayaran Melalui E-Banking, Anda akan dialihkan ke Web E-Banking</li>
+        <li>Kemudian pilih menu transfer dan Lakukan transaksi dengan mengisi No.Rek Tujuan yaitu <strong>11111111</strong></li>
+        <li>Masukkan Jumlah Dan Kode Transaksi</li>
+
+    </ul>
+</div>

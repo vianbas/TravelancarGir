@@ -1,0 +1,66 @@
+﻿@model IEnumerable<TRAVELANCAR.Models.penerbangan_univ>
+
+@{
+    ViewBag.Title = "DaftarPenerbangan";
+}
+
+<h2>DaftarPenerbangan</h2>
+
+<table>
+    <tr>
+        <th>Maskapai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Berangkat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Tiba&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Transit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Durasi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Bagasi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Harga&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        if (item.id != 0 && item.kota_asal != "NULL")
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nama_maskapai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jam_keberangkatan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jam_tiba)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kota_transit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.durasi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bagasi_maksimum) kg
+            </td>
+            <td>
+                Rp. @Html.DisplayFor(modelItem => item.harga),-
+            </td>
+            <td>
+                @{
+                    if(@User.Identity.IsAuthenticated){
+                    @Html.ActionLink("|Pesan Sekarang|", "pesantiket", new { idPenerbangan = item.id, maskapai = item.nama_maskapai, jumlahPenumpang = ViewBag.Message},null)
+                }
+                }
+                
+            </td>
+        </tr>
+        }
+    }
+
+</table>

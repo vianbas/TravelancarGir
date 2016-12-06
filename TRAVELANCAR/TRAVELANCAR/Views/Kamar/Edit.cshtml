@@ -1,0 +1,85 @@
+﻿@model TRAVELANCAR.Models.kamar_univ
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>kamar_univ</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.kategori)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.kategori)
+            @Html.ValidationMessageFor(model => model.kategori)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.harga_hari_biasa)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.harga_hari_biasa)
+            @Html.ValidationMessageFor(model => model.harga_hari_biasa)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.harga_akhir_pekan)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.harga_akhir_pekan)
+            @Html.ValidationMessageFor(model => model.harga_akhir_pekan)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jumlah_tersedia)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jumlah_tersedia)
+            @Html.ValidationMessageFor(model => model.jumlah_tersedia)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.free_wifi)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.free_wifi)
+            @Html.ValidationMessageFor(model => model.free_wifi)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.free_breakfast)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.free_breakfast)
+            @Html.ValidationMessageFor(model => model.free_breakfast)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jumlah_guest)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jumlah_guest)
+            @Html.ValidationMessageFor(model => model.jumlah_guest)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

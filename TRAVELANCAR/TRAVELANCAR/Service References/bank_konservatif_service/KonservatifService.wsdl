@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://service/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="KonservatifService" targetNamespace="http://service/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/Bank_Konservatif_Service/KonservatifService?xsd=1" namespace="http://service/" />
+    </xsd:schema>
+  </types>
+  <message name="transfer">
+    <part name="parameters" element="tns:transfer" />
+  </message>
+  <message name="transferResponse">
+    <part name="parameters" element="tns:transferResponse" />
+  </message>
+  <message name="NonexistentEntityException">
+    <part name="fault" element="tns:NonexistentEntityException" />
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
+  </message>
+  <message name="hello">
+    <part name="parameters" element="tns:hello" />
+  </message>
+  <message name="helloResponse">
+    <part name="parameters" element="tns:helloResponse" />
+  </message>
+  <message name="cekTransaksiMasuk">
+    <part name="parameters" element="tns:cekTransaksiMasuk" />
+  </message>
+  <message name="cekTransaksiMasukResponse">
+    <part name="parameters" element="tns:cekTransaksiMasukResponse" />
+  </message>
+  <message name="login">
+    <part name="parameters" element="tns:login" />
+  </message>
+  <message name="loginResponse">
+    <part name="parameters" element="tns:loginResponse" />
+  </message>
+  <message name="cekSaldo">
+    <part name="parameters" element="tns:cekSaldo" />
+  </message>
+  <message name="cekSaldoResponse">
+    <part name="parameters" element="tns:cekSaldoResponse" />
+  </message>
+  <portType name="KonservatifService">
+    <operation name="transfer">
+      <input wsam:Action="http://service/KonservatifService/transferRequest" message="tns:transfer" />
+      <output wsam:Action="http://service/KonservatifService/transferResponse" message="tns:transferResponse" />
+      <fault wsam:Action="http://service/KonservatifService/transfer/Fault/NonexistentEntityException" name="NonexistentEntityException" message="tns:NonexistentEntityException" />
+      <fault wsam:Action="http://service/KonservatifService/transfer/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="hello">
+      <input wsam:Action="http://service/KonservatifService/helloRequest" message="tns:hello" />
+      <output wsam:Action="http://service/KonservatifService/helloResponse" message="tns:helloResponse" />
+    </operation>
+    <operation name="cekTransaksiMasuk">
+      <input wsam:Action="http://service/KonservatifService/cekTransaksiMasukRequest" message="tns:cekTransaksiMasuk" />
+      <output wsam:Action="http://service/KonservatifService/cekTransaksiMasukResponse" message="tns:cekTransaksiMasukResponse" />
+    </operation>
+    <operation name="login">
+      <input wsam:Action="http://service/KonservatifService/loginRequest" message="tns:login" />
+      <output wsam:Action="http://service/KonservatifService/loginResponse" message="tns:loginResponse" />
+    </operation>
+    <operation name="cekSaldo">
+      <input wsam:Action="http://service/KonservatifService/cekSaldoRequest" message="tns:cekSaldo" />
+      <output wsam:Action="http://service/KonservatifService/cekSaldoResponse" message="tns:cekSaldoResponse" />
+    </operation>
+  </portType>
+  <binding name="KonservatifServicePortBinding" type="tns:KonservatifService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="transfer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="NonexistentEntityException">
+        <soap:fault use="literal" name="NonexistentEntityException" namespace="" />
+      </fault>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hello">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cekTransaksiMasuk">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="login">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cekSaldo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="KonservatifService">
+    <port name="KonservatifServicePort" binding="tns:KonservatifServicePortBinding">
+      <soap:address location="http://localhost:8080/Bank_Konservatif_Service/KonservatifService" />
+    </port>
+  </service>
+</definitions>

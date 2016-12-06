@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="hotel_mawar_melatiModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="hotel_mawar_melatiModelStoreContainer">
+          <EntitySet Name="kamar" EntityType="hotel_mawar_melatiModel.Store.kamar" store:Type="Tables" />
+          <EntitySet Name="pemesanan" EntityType="hotel_mawar_melatiModel.Store.pemesanan" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="hotel_mawar_melatiModel.Store.sysdiagrams" store:Type="Tables" />
+          <AssociationSet Name="FK_pemesanan_kamar" Association="hotel_mawar_melatiModel.Store.FK_pemesanan_kamar">
+            <End Role="kamar" EntitySet="kamar" />
+            <End Role="pemesanan" EntitySet="pemesanan" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="kamar">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="kategori" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="harga_hari_biasa" Type="int" Nullable="false" />
+          <Property Name="harga_akhir_pekan" Type="int" Nullable="false" />
+          <Property Name="jumlah_tersedia" Type="int" Nullable="false" />
+          <Property Name="free_wifi" Type="int" Nullable="false" />
+          <Property Name="free_breakfast" Type="int" Nullable="false" />
+          <Property Name="jumlah_guest" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="pemesanan">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="id_kamar" Type="int" />
+          <Property Name="tanggal_booking" Type="datetime" Nullable="false" />
+          <Property Name="tanggal_check_in" Type="datetime" Nullable="false" />
+          <Property Name="tanggal_check_out" Type="datetime" Nullable="false" />
+          <Property Name="nama_pemesan" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="total_harga" Type="int" Nullable="false" />
+          <Property Name="kode_booking" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="image" />
+        </EntityType>
+        <Association Name="FK_pemesanan_kamar">
+          <End Role="kamar" Type="hotel_mawar_melatiModel.Store.kamar" Multiplicity="0..1" />
+          <End Role="pemesanan" Type="hotel_mawar_melatiModel.Store.pemesanan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="kamar">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="pemesanan">
+              <PropertyRef Name="id_kamar" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="hotel_mawar_melatiModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="hotel_mawar_melatiEntities2" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="kamar" EntityType="hotel_mawar_melatiModel.kamar" />
+          <EntitySet Name="pemesanan" EntityType="hotel_mawar_melatiModel.pemesanan" />
+          <EntitySet Name="sysdiagrams" EntityType="hotel_mawar_melatiModel.sysdiagrams" />
+          <AssociationSet Name="FK_pemesanan_kamar" Association="hotel_mawar_melatiModel.FK_pemesanan_kamar">
+            <End Role="kamar" EntitySet="kamar" />
+            <End Role="pemesanan" EntitySet="pemesanan" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="kamar">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="kategori" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="harga_hari_biasa" Type="Int32" Nullable="false" />
+          <Property Name="harga_akhir_pekan" Type="Int32" Nullable="false" />
+          <Property Name="jumlah_tersedia" Type="Int32" Nullable="false" />
+          <Property Name="free_wifi" Type="Int32" Nullable="false" />
+          <Property Name="free_breakfast" Type="Int32" Nullable="false" />
+          <Property Name="jumlah_guest" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="pemesanan" Relationship="hotel_mawar_melatiModel.FK_pemesanan_kamar" FromRole="kamar" ToRole="pemesanan" />
+        </EntityType>
+        <EntityType Name="pemesanan">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="id_kamar" Type="Int32" />
+          <Property Name="tanggal_booking" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="tanggal_check_in" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="tanggal_check_out" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="nama_pemesan" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="total_harga" Type="Int32" Nullable="false" />
+          <Property Name="kode_booking" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="kamar" Relationship="hotel_mawar_melatiModel.FK_pemesanan_kamar" FromRole="pemesanan" ToRole="kamar" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_pemesanan_kamar">
+          <End Role="kamar" Type="hotel_mawar_melatiModel.kamar" Multiplicity="0..1" />
+          <End Role="pemesanan" Type="hotel_mawar_melatiModel.pemesanan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="kamar">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="pemesanan">
+              <PropertyRef Name="id_kamar" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="hotel_mawar_melatiModelStoreContainer" CdmEntityContainer="hotel_mawar_melatiEntities2">
+          <EntitySetMapping Name="kamar">
+            <EntityTypeMapping TypeName="hotel_mawar_melatiModel.kamar">
+              <MappingFragment StoreEntitySet="kamar">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="kategori" ColumnName="kategori" />
+                <ScalarProperty Name="harga_hari_biasa" ColumnName="harga_hari_biasa" />
+                <ScalarProperty Name="harga_akhir_pekan" ColumnName="harga_akhir_pekan" />
+                <ScalarProperty Name="jumlah_tersedia" ColumnName="jumlah_tersedia" />
+                <ScalarProperty Name="free_wifi" ColumnName="free_wifi" />
+                <ScalarProperty Name="free_breakfast" ColumnName="free_breakfast" />
+                <ScalarProperty Name="jumlah_guest" ColumnName="jumlah_guest" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pemesanan">
+            <EntityTypeMapping TypeName="hotel_mawar_melatiModel.pemesanan">
+              <MappingFragment StoreEntitySet="pemesanan">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="id_kamar" ColumnName="id_kamar" />
+                <ScalarProperty Name="tanggal_booking" ColumnName="tanggal_booking" />
+                <ScalarProperty Name="tanggal_check_in" ColumnName="tanggal_check_in" />
+                <ScalarProperty Name="tanggal_check_out" ColumnName="tanggal_check_out" />
+                <ScalarProperty Name="nama_pemesan" ColumnName="nama_pemesan" />
+                <ScalarProperty Name="total_harga" ColumnName="total_harga" />
+                <ScalarProperty Name="kode_booking" ColumnName="kode_booking" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="hotel_mawar_melatiModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

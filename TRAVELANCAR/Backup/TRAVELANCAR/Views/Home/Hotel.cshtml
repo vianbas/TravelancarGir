@@ -1,0 +1,128 @@
+﻿@model TRAVELANCAR.Models.perbandinganhotel
+
+@{
+    ViewBag.Title = "Hotel";
+}
+
+<h2>Hotel Kasur Empuk</h2>
+
+<table>
+    <tr>
+        <th>Kategori
+        </th>
+        <th>Harga Biasa&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Harga Pekan&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Jumlah Tersedia&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Free Wifi&nbsp;&nbsp;&nbsp;&nbsp
+        </th>
+        <th>Free Breakfast&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Jumlah Guest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.daftarKamarHotelKasurEmpuk)
+    {
+        if (item.jumlah_tersedia > 0)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.kategori)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.harga_hari_biasa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.harga_akhir_pekan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jumlah_tersedia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.free_wifi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.free_breakfast)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jumlah_guest)
+            </td>
+            <td>
+               @{
+                    if(User.Identity.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Booking", "bookingkamar", new { id = item.id, hotel = "hotel_kasur_empuk" }, null)
+                    }    
+               }
+            </td>
+        </tr>
+        }
+    }
+
+</table>
+
+<h2>Hotel Mawar Melati</h2>
+
+
+<table>
+    <tr>
+        <th>Kategori
+        </th>
+        <th>Harga Biasa&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Harga Pekan&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Jumlah Tersedia&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Free Wifi&nbsp;&nbsp;&nbsp;&nbsp
+        </th>
+        <th>Free Breakfast&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Jumlah Guest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.daftarKamarHotelMawarMelati)
+    {
+        if (item.jumlah_tersedia > 0)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.kategori)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.harga_hari_biasa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.harga_akhir_pekan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jumlah_tersedia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.free_wifi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.free_breakfast)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jumlah_guest)
+            </td>
+            <td>
+                @{
+                    if(User.Identity.IsAuthenticated)
+                    {
+                         @Html.ActionLink("|Booking|", "bookingkamar", new { id = item.id, hotel = "hotel_mawar_melati" }, null)
+                    }    
+               }
+            </td>
+        </tr>
+        }
+    }
+
+</table>

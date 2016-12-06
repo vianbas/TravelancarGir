@@ -1,0 +1,38 @@
+﻿@model TRAVELANCAR.maskapai_pinguin_air_service.CompositeType
+
+@{
+    ViewBag.Title = "TiketPinguinAir";
+}
+
+<h2>Tiket Pinguin Air</h2>
+
+<fieldset>
+    <legend>CompositeType</legend>
+</fieldset>
+<p>
+    <strong>Kota Asal   :</strong> @Model.penerbangan_sah.kota_asal  
+    <br>
+    <strong>Kota Tujuan :<//strong> @Model.penerbangan_sah.kota_tujuan
+</p>
+<p>
+   <strong>Tanggal Berangkat :</strong> @Model.penerbangan_sah.tanggal_keberangkatan.DayOfWeek   @Model.penerbangan_sah.tanggal_keberangkatan.Month   @Model.penerbangan_sah.tanggal_keberangkatan.Year <br>
+   <strong>Jam Keberangkatan :</strong> @Model.penerbangan_sah.jam_keberangkatan  <br>
+   <strong>Jam Tiba          :</strong>@Model.penerbangan_sah.jam_tiba
+</p>
+<p>
+    <strong>Total Harga  :</strong> @Model.tiket_sah.total_harga   
+    <strong>Kode Booking :</strong> @Model.tiket_sah.kode_booking
+</p>
+<p>
+    <strong>Daftar Penumpang</strong>
+    @{
+        int i = 1;    
+    }
+    @foreach (var a in Model.daftarPenumpang)
+    {
+        <h5>Penumpang @i</h5>
+        <strong>Nama         : </strong>@a.nama 
+        <strong>No Identitas : </strong> @a.nomor_identitas
+        i++;
+    }
+</p>

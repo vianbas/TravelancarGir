@@ -1,0 +1,131 @@
+﻿@model TRAVELANCAR.Models.CariTiket
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Message @User.Identity.Name</h1>
+            </hgroup>
+        </div>
+    </section>
+}
+
+@{
+    List<SelectListItem> listKota = new List<SelectListItem>();
+    listKota.Add(new SelectListItem
+         {
+             Text = "----MEDAN---",
+             Value = "Medan"
+         });
+    listKota.Add(new SelectListItem
+         {
+             Text = "----JAKARTA---",
+             Value = "Jakarta",
+             Selected = true
+         });
+    listKota.Add(new SelectListItem
+         {
+             Text = "----SURABAYA---",
+             Value = "Surabaya"
+         });
+    listKota.Add(new SelectListItem
+    {
+        Text = "----BALI---",
+        Value = "Bali"
+    });     
+}
+
+@{
+    List<SelectListItem> listTujuan = new List<SelectListItem>();
+    listTujuan.Add(new SelectListItem
+         {
+             Text = "----MEDAN---",
+             Value = "Medan",
+             Selected = true
+         });
+    listTujuan.Add(new SelectListItem
+         {
+             Text = "----JAKARTA---",
+             Value = "Jakarta"
+         });
+    listTujuan.Add(new SelectListItem
+         {
+             Text = "----SURABAYA---",
+             Value = "Surabaya"
+         });
+    listTujuan.Add(new SelectListItem
+    {
+        Text = "----BALI---",
+        Value = "Bali"
+    });     
+}
+
+@{
+    List<SelectListItem> listPenumpang = new List<SelectListItem>();
+    listPenumpang.Add(new SelectListItem
+         {
+             Text = "1 Orang",
+             Value = "1",
+             Selected = true
+         });
+    listPenumpang.Add(new SelectListItem
+         {
+             Text = "2 Orang",
+             Value = "2"
+         });
+    listPenumpang.Add(new SelectListItem
+         {
+             Text = "3 Orang",
+             Value = "3"
+         });
+}
+<h3>Form Pencarian Tiket:</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>CariTiket</legend>
+
+        <div class="editor-label">
+           <strong><h5>Kota Asal :</h5></strong>
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.kotaAsal, listKota, "--Pilih Kota Asal--")
+            @Html.ValidationMessageFor(model => model.kotaAsal)
+        </div>
+
+        <div class="editor-label">
+            <strong><h5>Kota Tujuan :</h5></strong>
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.kotaTujuan, listTujuan, "--Pilih Kota Tujuan---")
+            @Html.ValidationMessageFor(model => model.kotaTujuan)
+        </div>
+
+        <div class="editor-label">
+            <strong><h5>Tanggal Keberangkatan :</h5></strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.tanggalBerangkat)
+            @Html.ValidationMessageFor(model => model.tanggalBerangkat)
+        </div>
+
+        <div class="editor-label">
+            <strong><h5>Jumlah Penumpang :</h5></strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jumlahPenumpang)
+            @Html.ValidationMessageFor(model => model.jumlahPenumpang)
+        </div>
+
+        <p>
+            <input type="submit" value="Cari Tiket" />
+        </p>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

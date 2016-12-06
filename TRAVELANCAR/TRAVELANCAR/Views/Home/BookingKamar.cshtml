@@ -1,0 +1,42 @@
+﻿@model TRAVELANCAR.Models.BookingKamar
+
+@{
+    ViewBag.Title = "BookingKamar";
+}
+
+<h2>BookingKamar @ViewBag.Hotel</h2><br>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend></legend>
+        <div class="editor-label">
+            <h4><strong>Tanggal Check-IN<strong></h4>
+        </div>
+        @Html.Hidden("idKamar", Model.idKamar)
+        @Html.Hidden("namaHotel", Model.namaHotel)
+        <div class="editor-field">
+            @Html.EditorFor(model => model.tanggalCheckIn)
+            @Html.ValidationMessageFor(model => model.tanggalCheckIn)
+        </div>
+
+        <div class="editor-label">
+            <h4><strong>Tanggal Check-OUT<strong></h4>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.tanggalCheckOut)
+            @Html.ValidationMessageFor(model => model.tanggalCheckOut)
+        </div>
+
+        <p>
+            <input type="submit" value="Book" />
+        </p>
+    </fieldset>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

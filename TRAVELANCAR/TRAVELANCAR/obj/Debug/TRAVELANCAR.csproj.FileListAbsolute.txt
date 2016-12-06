@@ -1,0 +1,165 @@
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\TRAVELANCAR.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\TRAVELANCAR.pdb
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Antlr3.Runtime.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.AspNet.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.Core.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OAuth.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OpenId.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\EntityFramework.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Data.Edm.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Data.OData.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Web.Infrastructure.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Newtonsoft.Json.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Spatial.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Helpers.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Http.OData.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Mvc.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Optimization.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Razor.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.Deployment.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.Razor.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\WebGrease.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\WebMatrix.Data.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\WebMatrix.WebData.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\EntityFramework.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Newtonsoft.Json.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Helpers.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Mvc.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Razor.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.Deployment.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.Razor.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\WebMatrix.Data.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\WebMatrix.WebData.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.AspNet.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.Core.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OAuth.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OpenId.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Http.OData.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Data.Edm.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Data.OData.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Spatial.xml
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\de\Microsoft.Data.Edm.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\es\Microsoft.Data.Edm.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\it\Microsoft.Data.Edm.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\de\Microsoft.Data.OData.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\es\Microsoft.Data.OData.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\fr\Microsoft.Data.OData.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\it\Microsoft.Data.OData.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\ja\Microsoft.Data.OData.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\ko\Microsoft.Data.OData.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\ru\Microsoft.Data.OData.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\de\System.Spatial.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\es\System.Spatial.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\fr\System.Spatial.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\it\System.Spatial.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\ja\System.Spatial.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\ko\System.Spatial.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\ru\System.Spatial.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hans\System.Spatial.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hant\System.Spatial.resources.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\obj\Debug\TRAVELANCAR.dll
+D:\ACE\TRAVELANCAR\TRAVELANCAR\obj\Debug\TRAVELANCAR.pdb
+D:\ACE\TRAVELANCAR\TRAVELANCAR\obj\Debug\TRAVELANCAR.csprojResolveAssemblyReference.cache
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\TRAVELANCAR.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\TRAVELANCAR.pdb
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Antlr3.Runtime.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.AspNet.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.Core.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OAuth.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OpenId.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\EntityFramework.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Data.Edm.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Data.OData.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Web.Infrastructure.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Newtonsoft.Json.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Spatial.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Helpers.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Http.OData.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Mvc.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Optimization.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Razor.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.Deployment.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.Razor.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\WebGrease.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\WebMatrix.Data.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\WebMatrix.WebData.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\EntityFramework.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Newtonsoft.Json.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Helpers.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Mvc.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Razor.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.Deployment.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.WebPages.Razor.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\WebMatrix.Data.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\WebMatrix.WebData.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.AspNet.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.Core.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OAuth.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OpenId.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Http.OData.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Data.Edm.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\Microsoft.Data.OData.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Spatial.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\de\Microsoft.Data.OData.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\es\Microsoft.Data.OData.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\it\Microsoft.Data.OData.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\de\System.Spatial.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\es\System.Spatial.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\fr\System.Spatial.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\it\System.Spatial.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\ja\System.Spatial.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\ko\System.Spatial.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\ru\System.Spatial.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hans\System.Spatial.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\zh-Hant\System.Spatial.resources.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\obj\Debug\TRAVELANCAR.csprojResolveAssemblyReference.cache
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\obj\Debug\TRAVELANCAR.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\obj\Debug\TRAVELANCAR.pdb
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\TRAVELANCAR.dll.config
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Net.Http.Formatting.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Http.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Http.WebHost.dll
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Net.Http.Formatting.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Http.xml
+D:\Kuliah\Semester 4\IE321323 PROKOF\TugasBesarProkof\kelompok taufan\ACE\TRAVELANCAR\TRAVELANCAR\bin\System.Web.Http.WebHost.xml

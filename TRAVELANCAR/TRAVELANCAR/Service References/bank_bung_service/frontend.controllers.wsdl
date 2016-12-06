@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://localhost:83/bankbung/advanced/frontend/web/index.php?r=api%2Findex&amp;ws=1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="frontend.controllers.ApiController" targetNamespace="http://localhost:83/bankbung/advanced/frontend/web/index.php?r=api%2Findex&amp;ws=1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://localhost:83/bankbung/advanced/frontend/web/index.php?r=api%2Findex&amp;ws=1">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getIndexIn">
+    <wsdl:part name="kodetransaksi" type="xsd:anyType" />
+    <wsdl:part name="jumlah" type="xsd:anyType" />
+  </wsdl:message>
+  <wsdl:message name="getIndexOut">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="frontend.controllers.ApiControllerPort">
+    <wsdl:operation name="getIndex">
+      <wsdl:input message="tns:getIndexIn" />
+      <wsdl:output message="tns:getIndexOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="frontend.controllers.ApiControllerBinding" type="tns:frontend.controllers.ApiControllerPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getIndex">
+      <soap:operation soapAction="http://localhost:83/bankbung/advanced/frontend/web/index.php?r=api%2Findex&amp;ws=1#getIndex" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://localhost:83/bankbung/advanced/frontend/web/index.php?r=api%2Findex&amp;amp;ws=1" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://localhost:83/bankbung/advanced/frontend/web/index.php?r=api%2Findex&amp;amp;ws=1" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="frontend.controllers.ApiControllerService">
+    <wsdl:port name="frontend.controllers.ApiControllerPort" binding="tns:frontend.controllers.ApiControllerBinding">
+      <soap:address location="http://localhost:83/bankbung/advanced/frontend/web/index.php?r=api%2Findex&amp;ws=1" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

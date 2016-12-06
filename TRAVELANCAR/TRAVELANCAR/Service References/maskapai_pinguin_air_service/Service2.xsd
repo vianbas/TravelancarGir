@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4832/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:element name="getPenerbangan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="kota_asal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kota_tujuan" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tanggal_keberangkatan" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPenerbanganResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="getPenerbanganResult" nillable="true" type="q1:ArrayOfpenerbangan" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bayar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_tiket" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bayarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bayarResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="booking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_penerbangan" type="xs:int" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="penumpangs" nillable="true" type="q2:ArrayOfpenumpang" />
+        <xs:element minOccurs="0" name="user_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bookingResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTiket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_tiket" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTiketResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="getTiketResult" nillable="true" type="q3:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPemesanan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="user_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPemesananResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="getPemesananResult" nillable="true" type="q4:ArrayOftiket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

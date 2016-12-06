@@ -1,0 +1,69 @@
+﻿@model IEnumerable<TRAVELANCAR.Models.kamar_univ>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.kategori)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.harga_hari_biasa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.harga_akhir_pekan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.jumlah_tersedia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.free_wifi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.free_breakfast)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.jumlah_guest)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.kategori)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.harga_hari_biasa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.harga_akhir_pekan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.jumlah_tersedia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.free_wifi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.free_breakfast)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.jumlah_guest)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

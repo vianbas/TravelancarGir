@@ -1,0 +1,139 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCF_HOTEL_KASUR_EMPUK", "http://localhost:17646", "{CB455A05-44C6-47BB-8826-D1651CC3609B}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_17646"
+		Debug.AspNetCompiler.PhysicalPath = "..\WCF_HOTEL_KASUR_EMPUK\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_17646\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_17646"
+		Release.AspNetCompiler.PhysicalPath = "..\WCF_HOTEL_KASUR_EMPUK\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_17646\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\WCF_HOTEL_KASUR_EMPUK\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCF_HOTEL_MAWAR_MELATI", "http://localhost:17796", "{93F3F954-84DD-41C5-B374-8CF46937E368}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_17796"
+		Debug.AspNetCompiler.PhysicalPath = "..\WCF_HOTEL_MAWAR_MELATI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_17796\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_17796"
+		Release.AspNetCompiler.PhysicalPath = "..\WCF_HOTEL_MAWAR_MELATI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_17796\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\WCF_HOTEL_MAWAR_MELATI\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCF_MASKAPAI_ITIK_AIR", "http://localhost:1660", "{F60636AD-580C-49D1-A13A-7C7B9704552F}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1660"
+		Debug.AspNetCompiler.PhysicalPath = "..\WCF_MASKAPAI_ITIK_AIR\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1660\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1660"
+		Release.AspNetCompiler.PhysicalPath = "..\WCF_MASKAPAI_ITIK_AIR\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1660\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\WCF_MASKAPAI_ITIK_AIR\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCF_MASKAPAI_PINGUIN_AIR", "http://localhost:4832", "{B8AB8B9A-1656-445B-92C9-17629E3B8BA1}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_4832"
+		Debug.AspNetCompiler.PhysicalPath = "..\WCF_MASKAPAI_PINGUIN_AIR\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4832\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_4832"
+		Release.AspNetCompiler.PhysicalPath = "..\WCF_MASKAPAI_PINGUIN_AIR\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4832\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\WCF_MASKAPAI_PINGUIN_AIR\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCF_MASKAPAI_PUYUH_AIR", "http://localhost:4913", "{A7EC0CC9-E047-4963-AD72-7F326306E561}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_4913"
+		Debug.AspNetCompiler.PhysicalPath = "..\WCF_MASKAPAI_PUYUH_AIR\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4913\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_4913"
+		Release.AspNetCompiler.PhysicalPath = "..\WCF_MASKAPAI_PUYUH_AIR\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4913\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\WCF_MASKAPAI_PUYUH_AIR\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB455A05-44C6-47BB-8826-D1651CC3609B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB455A05-44C6-47BB-8826-D1651CC3609B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB455A05-44C6-47BB-8826-D1651CC3609B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB455A05-44C6-47BB-8826-D1651CC3609B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{93F3F954-84DD-41C5-B374-8CF46937E368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F3F954-84DD-41C5-B374-8CF46937E368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F3F954-84DD-41C5-B374-8CF46937E368}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F3F954-84DD-41C5-B374-8CF46937E368}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F60636AD-580C-49D1-A13A-7C7B9704552F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60636AD-580C-49D1-A13A-7C7B9704552F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60636AD-580C-49D1-A13A-7C7B9704552F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60636AD-580C-49D1-A13A-7C7B9704552F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B8AB8B9A-1656-445B-92C9-17629E3B8BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8AB8B9A-1656-445B-92C9-17629E3B8BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8AB8B9A-1656-445B-92C9-17629E3B8BA1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8AB8B9A-1656-445B-92C9-17629E3B8BA1}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A7EC0CC9-E047-4963-AD72-7F326306E561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EC0CC9-E047-4963-AD72-7F326306E561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7EC0CC9-E047-4963-AD72-7F326306E561}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EC0CC9-E047-4963-AD72-7F326306E561}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

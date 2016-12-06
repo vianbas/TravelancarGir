@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfpenerbangan">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="penerbangan" nillable="true" type="tns:penerbangan" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpenerbangan" nillable="true" type="tns:ArrayOfpenerbangan" />
+  <xs:complexType name="penerbangan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bagasi_maksimum" type="xs:int" />
+      <xs:element minOccurs="0" name="bandara_asal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="bandara_transit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="bandara_tujuan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="durasi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="harga" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="jam_keberangkatan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jam_tiba" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kota_asal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kota_transit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kota_tujuan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nama_maskapai" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tanggal_keberangkatan" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="tiket" nillable="true" type="tns:ArrayOftiket" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="penerbangan" nillable="true" type="tns:penerbangan" />
+  <xs:complexType name="ArrayOftiket">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tiket" nillable="true" type="tns:tiket" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftiket" nillable="true" type="tns:ArrayOftiket" />
+  <xs:complexType name="tiket">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="batas_waktu_bayar_atm" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="batas_waktu_bayar_internet_banking" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="id_penerbangan" type="xs:int" />
+      <xs:element minOccurs="0" name="kode_bayar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kode_booking" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="penerbangan" nillable="true" type="tns:penerbangan" />
+      <xs:element minOccurs="0" name="penumpang" nillable="true" type="tns:ArrayOfpenumpang" />
+      <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_harga" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="user_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="waktu_booking" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tiket" nillable="true" type="tns:tiket" />
+  <xs:complexType name="ArrayOfpenumpang">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="penumpang" nillable="true" type="tns:penumpang" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpenumpang" nillable="true" type="tns:ArrayOfpenumpang" />
+  <xs:complexType name="penumpang">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="id_tiket" type="xs:int" />
+      <xs:element minOccurs="0" name="nama" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nomor_identitas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tiket" nillable="true" type="tns:tiket" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="penumpang" nillable="true" type="tns:penumpang" />
+  <xs:complexType name="CompositeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="daftarPenumpang" nillable="true" type="tns:ArrayOfpenumpang" />
+      <xs:element minOccurs="0" name="penerbangan_sah" nillable="true" type="tns:penerbangan" />
+      <xs:element minOccurs="0" name="tiket_sah" nillable="true" type="tns:tiket" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompositeType" nillable="true" type="tns:CompositeType" />
+</xs:schema>

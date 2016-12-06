@@ -1,0 +1,28 @@
+﻿@model IList<TRAVELANCAR.Models.penumpang_univ>
+
+@{
+    ViewBag.Title = "PesanTiket";
+}
+
+<h2>Silahkan Mengisi Form Penumpang di Bawah ini : </h2>
+
+@using (Html.BeginForm())
+{
+    for (int i = 0; i < Model.Count(); i++)
+    {
+    <fieldset>
+        <h3><strong>Penumpang @(i + 1) </strong></h3>
+        <br>
+        @Html.HiddenFor(model => Model.ElementAt(i).namaMaskapai)
+        <div>
+            <label>Nama </label>@Html.Editor("[" + i + "].nama")
+        </div>
+        <div>
+            <label>Nomor Identitas </label>@Html.Editor("[" + i + "].nomor_identitas")
+        </div>
+    </fieldset>
+    }
+    <button type="submit">Submit</button>
+}
+
+
